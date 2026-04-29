@@ -99,3 +99,18 @@ The model was evaluated with and without retrieved context. Results show that RA
 
 ### Input Template (All 4 Required Elements)
 <REVIEW> [review_text] <SENT> [sentiment_label] <HELP> [helpfulness_label] <RETR> [retrieved_context] <SEP> <EXP> [generated_explanation] <EOS>
+
+
+---
+
+## How to Run
+
+###  Google Colab (Recommended)
+1. Upload the `.json.gz` files to Colab
+2. Open the notebook in Colab
+3. Enable GPU: `Runtime → Change runtime type → T4 GPU`
+4. Run all cells sequentially (Runtime → Run all)
+
+
+
+
