@@ -1,0 +1,24 @@
+{
+  "Part_A_Encoder": {
+    "test_sentiment_accuracy": 0.8355555555555556,
+    "test_helpfulness_accuracy": 0.7103703703703703,
+    "description": "Multi-task: 3-class sentiment + binary helpfulness"
+  },
+  "Part_B_Retrieval": {
+    "num_training_embeddings": 25200,
+    "similarity_metric": "cosine_similarity",
+    "k_retrieved": 3,
+    "note": "Self-matches filtered; high similarity scores observed"
+  },
+  "Part_C_Decoder": {
+    "test_perplexity": 40.33528282713544,
+    "architecture": "4 layers, 8 heads, 256 dim",
+    "all_four_inputs_used": true,
+    "inputs": [
+      "review_text",
+      "sentiment_label",
+      "helpfulness_label",
+      "retrieved_context"
+    ]
+  }
+}
